@@ -17,6 +17,13 @@ sudo systemctl enable mariadb
 
 
 
+git init
+git add .
+git commit -m ""
+git add origin http://
+git push origin master
+
+
 
 
 

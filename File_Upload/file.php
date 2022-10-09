@@ -11,19 +11,20 @@
 </body>
 </html>
 <?php
+var_dump(PATHINFO_EXTENSION);
 $picname = $_FILES['fileToUpload']['name']; #name of file
-$x = mkdir("uploader/".$picname);
+$x = mkdir("/var/www/siyamak_domain/html/uploader_siyamak".$picname);
+var_dump($x);
+// $array = expload(".", $picname);
+// // $total = count($array);
+// // var_dump($array[$total-1]);
 
-$array = expload(".", $picname);
-// $total = count($array);
-// var_dump($array[$total-1]);
+// // echo end($array);
+// $ext = end($array);
+// $newname = rand().".".$ext;
 
-// echo end($array);
-$ext = end($array);
-$newname = rand().".".$ext;
-
-$form = $_FILES['fileToUpload']['tmp_name'];
-$to = "uploader/".$newname;
+// $form = $_FILES['fileToUpload']['tmp_name'];
+// $to = "uploader/".$newname;
 
 move_uploaded_file($from, $to);
 ?>

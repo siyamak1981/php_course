@@ -1,5 +1,5 @@
 <?php
-echo readfile("test.txt");
+// echo readfile("test.txt");
 ?>
 
 <!-- or -->
@@ -7,9 +7,9 @@ echo readfile("test.txt");
 
 
 <?php
-    $myfile = fopen("test.txt", "r") or die("Unable to open file!");
-    echo fread($myfile,filesize("test.txt"));
-    fclose($myfile);
+    // $myfile = fopen("test.txt", "r") or die("Unable to open file!");
+    // echo fread($myfile,filesize("test.txt"));
+    // fclose($myfile);
 ?>
 <!-- ========================================== -->
 
@@ -31,18 +31,18 @@ x+	Creates a new file for read/write. Returns FALSE and an error if file already
 
 
 <?php
-    $myfile = fopen("test.txt", "r") or die("Unable to open file!");
-    echo fgets($myfile);
-    fclose($myfile);
+    // $myfile = fopen("test.txt", "r") or die("Unable to open file!");
+    // echo fgets($myfile);
+    // fclose($myfile);
 ?>
 <!-- ================================================ -->
 
 
 
 <?php
-    $myfile = fopen("newfile.txt", "w") or die("Unable to open file!");
-    $txt = "John Doe\n";
-    fwrite($myfile, $txt);
+    // $myfile = fopen("newfile.txt", "w") or die("Unable to open file!");
+    // $txt = "John Doe\n";
+    // fwrite($myfile, $txt);
    
-    fclose($myfile);
+    // fclose($myfile);
 ?>
